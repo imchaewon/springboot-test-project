@@ -12,11 +12,11 @@ public class Incomplete {
 
 		int[] result = toBinary(num);
 
-		for (int j = 1; j <= ; j+=10) {
-			for (int i = 0; i < 10; i++) {
-				System.out.print(result[i*j]);
+		for (int i = 1; i <= 32; i++) {
+			System.out.print(result[i-1]);
+			if(i % 10 == 0) {
+				System.out.println();
 			}
-			System.out.println();
 		}
 
 	}
