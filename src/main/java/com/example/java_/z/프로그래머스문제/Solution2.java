@@ -3,6 +3,7 @@ package com.example.java_.z.프로그래머스문제;
 import java.util.Arrays;
 import java.util.OptionalDouble;
 
+// 평균
 public class Solution2 {
 	public double solution(int[] arr) {
 		double answer = 0;

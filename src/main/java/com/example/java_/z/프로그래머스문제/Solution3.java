@@ -2,6 +2,7 @@ package com.example.java_.z.프로그래머스문제;
 
 import java.util.Arrays;
 
+// 뒤집기
 public class Solution3 {
 	public int[] solution(long n) {
 		int len = (int) Math.log10(n) + 1;
