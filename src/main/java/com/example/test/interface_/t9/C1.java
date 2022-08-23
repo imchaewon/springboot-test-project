@@ -5,7 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class C1 {
 	private Inter<JsonNode> inter;
-	private static final ObjectMapper objectMapper = null;;
+	private static final ObjectMapper objectMapper = null;
 
 	void c1m1(){
 		JsonNode jsonNode = inter.m1();
