@@ -1,4 +1,4 @@
-package com.example.testProject.test;
+package com.example.testProject.test2;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;

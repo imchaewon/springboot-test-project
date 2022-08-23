@@ -1,26 +1,27 @@
 package com.example.test.collection.list;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class C4 {
 	public static void main(String[] args) {
 
-		Integer[] arr = {1,2,3,4};
-		List<Integer> list = Arrays.asList(arr);
+		String[] arr = {"가","나","다"};
 
-		List<Integer> list2 = new ArrayList<>(list);
+		List<String> list = Arrays.asList(arr);
 
-		System.out.println(list2);
-		list2.add(5);
+		System.out.println(Arrays.toString(arr));
+		System.out.println(list);
 
-		List<Integer> list3 = new ArrayList<>();
-		list3.add(0);
+		System.out.println(list.set(1,"바"));
 
-		list3.addAll(list);
+		System.out.println(Arrays.toString(arr));
+		System.out.println(list);
 
-		System.out.println(list3);
+		System.out.println(arr[1] = "사");
+
+		System.out.println(Arrays.toString(arr));
+		System.out.println(list);
 
 	}
 }

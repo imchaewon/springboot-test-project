@@ -1,10 +1,9 @@
-package com.example.testProject.test.qualifier;
+package com.example.testProject.test2.qualifier;
 
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
+//@Qualifier("kiaa")
 @Component
-@Qualifier("kiaa")
 public class Kia extends Car{
 	@Override
 	public String getCEO() {

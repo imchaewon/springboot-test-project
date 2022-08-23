@@ -2,26 +2,17 @@ package com.example.test.collection.list;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class C5 {
 	public static void main(String[] args) {
 
-		String[] arr = {"가","나","다"};
+		List<Integer> list = Arrays.asList(1,2,3,4,2,3,5);
 
-		List<String> list = Arrays.asList(arr);
+		System.out.println(list.stream().map(Object::toString).collect(Collectors.joining(", ")));
 
-		System.out.println(Arrays.toString(arr));
-		System.out.println(list);
 
-		System.out.println(list.set(1,"바"));
 
-		System.out.println(Arrays.toString(arr));
-		System.out.println(list);
-
-		System.out.println(arr[1] = "사");
-
-		System.out.println(Arrays.toString(arr));
-		System.out.println(list);
 
 	}
 }

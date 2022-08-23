@@ -1,8 +1,7 @@
-package com.example.testProject.test;
+package com.example.testProject.test2;
 
-import com.example.testProject.test.qualifier.Car;
+import com.example.testProject.test2.qualifier.Car;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -14,7 +13,7 @@ public class Run {
 	private final C3 c3;
 	private final C4 c4;
 
-	@Qualifier("kiaa")
+//	@Qualifier("kiaa")
 	private final Car kia;
 	private final Car hyundai;
 

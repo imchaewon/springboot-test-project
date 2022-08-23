@@ -44,3 +44,16 @@ logging:
       audit: OFF
       resultset: OFF
       connection: OFF
+
+
+test-api:
+  base-url: aaa
+  domain-id: 111
+  bot-id: 222
+
+
+
+
+
+
+

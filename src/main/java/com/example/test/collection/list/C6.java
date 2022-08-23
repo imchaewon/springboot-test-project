@@ -1,16 +1,27 @@
-package com.example.test.collection.list;
+package com.example.test.collection.list1;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class C6 {
 	public static void main(String[] args) {
 
-		List<Integer> list = Arrays.asList(1,2,3,4,2,3,5);
+		List<Integer> list1 = new ArrayList<>();
+		list1.add(1);
+		list1.add(2);
+		list1.add(3);
 
-		System.out.println(list.stream().map(Object::toString).collect(Collectors.joining(", ")));
+		System.out.println(list1);
+
+		List<Integer> list2 = list1;
+
+		System.out.println(list2);
+
+		list2.add(4);
+		list1.add(5);
+
+		System.out.println(list1);
+		System.out.println(list2);
 
 
 

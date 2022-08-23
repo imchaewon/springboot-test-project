@@ -1,4 +1,4 @@
-package com.example.testProject.test;
+package com.example.testProject.test2;
 
 import org.json.JSONObject;
 import org.springframework.stereotype.Service;
