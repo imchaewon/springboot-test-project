@@ -14,10 +14,10 @@ public interface Inter<T> {
 		private int age;
 	}
 
-	T m1(C1.C1Builder builder, String url);
+	T m1(String name, int age);
 
 	default T m1() {
-		return m1(new C1.C1Builder(),"asd");
+		return m1("xxx",111);
 	}
 
 }

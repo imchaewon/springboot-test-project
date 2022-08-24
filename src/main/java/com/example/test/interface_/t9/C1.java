@@ -1,5 +1,6 @@
 package com.example.test.interface_.t9;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -8,8 +9,12 @@ public class C1 {
 	private static final ObjectMapper objectMapper = null;
 
 	void c1m1(){
-		JsonNode jsonNode = inter.m1();
-		System.out.println(asPrettyJson(jsonNode));
+		JsonNode jsonNode = inter.m1("이름",123);
+		try {
+			System.out.println(objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(jsonNode));
+		} catch (JsonProcessingException e) {
+			throw new RuntimeException(e);
+		}
 	}
 
 	public static void main(String[] args) {
