@@ -44,6 +44,7 @@ logging:
       audit: OFF
       resultset: OFF
       connection: OFF
+    root: DEBUG
 
 
 test-api:
