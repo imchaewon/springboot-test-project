@@ -1,4 +1,4 @@
-package com.example.test.z.t2;
+package com.example.test.instanceof_.t2;
 
 import java.util.ArrayList;
 import java.util.List;

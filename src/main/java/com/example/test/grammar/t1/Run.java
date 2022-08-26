@@ -1,6 +1,6 @@
-package com.example.test.z;
+package com.example.test.grammar.t1;
 
-public class T3 {
+public class Run {
 	public static void main(String[] args) {
 
 		if(false) System.out.println(1); System.out.println(2);

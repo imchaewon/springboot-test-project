@@ -1,10 +1,10 @@
-package com.example.test.collection.list;
+package com.example.test.collection.list.t2;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class C1 {
+public class Run {
 	public static void main(String[] args) {
 		List<Integer> list = Arrays.asList(1,2,3);
 		List<Integer> list2 = new ArrayList<>(list);

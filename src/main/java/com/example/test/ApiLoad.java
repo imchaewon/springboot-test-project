@@ -7,7 +7,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
 
-public class ApiExplorer {
+public class ApiLoad {
 	public static void main(String[] args) throws IOException {
 		StringBuilder urlBuilder = new StringBuilder("http://api.data.go.kr/openapi/tn_pubr_prkplce_info_api"); /* URL */
 		urlBuilder.append("?" + URLEncoder.encode("serviceKey", "UTF-8") + "=elZJClL%2BcPyzL%2FwCk5Z3AtxWcAm6m%2FHITT9Uo8kvMuX6OEvsLeT9qBgSYFR1wpSVWM%2FQrzoItQZlAWU%2Fh1x5LA%3D%3D"); /* Service Key */

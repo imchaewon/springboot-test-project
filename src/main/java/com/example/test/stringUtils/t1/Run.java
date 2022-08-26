@@ -1,10 +1,10 @@
-package com.example.test.z;
+package com.example.test.stringUtils.t1;
 
 import org.springframework.util.StringUtils;
 
 import java.util.Arrays;
 
-public class T1 {
+public class Run {
 	public static void main(String[] args) {
 
 //		m1();

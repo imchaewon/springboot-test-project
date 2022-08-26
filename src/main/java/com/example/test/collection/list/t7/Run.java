@@ -1,9 +1,9 @@
-package com.example.test.collection.list1;
+package com.example.test.collection.list.t7;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class C6 {
+public class Run {
 	public static void main(String[] args) {
 
 		List<Integer> list1 = new ArrayList<>();

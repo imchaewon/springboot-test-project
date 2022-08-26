@@ -1,6 +1,6 @@
 package com.example.test.assert_;
 
-public class Run {
+public class T1 {
 	public static void main(String[] args) {
 		m1();
 	}
@@ -18,8 +18,7 @@ public class Run {
 
 		System.out.println(s1);
 
-//		assert s1 != null;
-		assert true;
+		assert s1 != null;
 
 		System.out.println("끝");
 

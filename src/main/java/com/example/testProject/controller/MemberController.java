@@ -43,4 +43,14 @@ public class MemberController {
 		model.addAttribute("data", list);
 	}
 
+	@PostMapping("asdf")
+	public void asdf(){
+		System.out.println("aaaaaaaa");
+	}
+
+	@GetMapping("zxcv")
+	public void zxcv(){
+		System.out.println("bbbbbbbb");
+	}
+
 }

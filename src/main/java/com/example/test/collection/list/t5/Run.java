@@ -1,9 +1,9 @@
-package com.example.test.collection.list;
+package com.example.test.collection.list.t5;
 
 import java.util.Arrays;
 import java.util.List;
 
-public class C4 {
+public class Run {
 	public static void main(String[] args) {
 
 		String[] arr = {"가","나","다"};

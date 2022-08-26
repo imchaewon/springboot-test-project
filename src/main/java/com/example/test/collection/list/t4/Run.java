@@ -1,10 +1,10 @@
-package com.example.test.collection.list;
+package com.example.test.collection.list.t4;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class C3 {
+public class Run {
 	public static void main(String[] args) {
 
 		Integer[] arr = {1,2,3,4};

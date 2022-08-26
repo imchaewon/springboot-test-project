@@ -1,13 +1,11 @@
-package com.example.test.z;
-
-import org.json.JSONObject;
+package com.example.test.clone.deepCopy.collection;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class T2 {
+public class Run {
 	public static void main(String[] args) {
 
 		List<String> list = new ArrayList<>();
@@ -19,7 +17,7 @@ public class T2 {
 
 		List<String> list2 = new ArrayList<>();
 
-		list2 = list;
+		list2 = (List<String>) ((ArrayList<String>)list).clone();
 
 		list2.add("c");
 
@@ -27,9 +25,7 @@ public class T2 {
 		System.out.println(list);
 
 
-
-
-
+		System.out.println("-----");
 
 
 		Map<String,Object> map = new HashMap<>();
@@ -41,38 +37,12 @@ public class T2 {
 
 		Map<String,Object> map2 = new HashMap<>();
 
-		map2 = map;
+		map2 = (Map<String,Object>)((HashMap<String,Object>)map).clone();
 
 		map2.put("c","ccc");
 
 		System.out.println(map2);
 		System.out.println(map);
-
-
-
-
-
-
-
-		JSONObject obj = new JSONObject();
-
-		obj.put("a","aaa");
-		obj.put("b","bbb");
-
-		System.out.println(obj);
-
-		JSONObject obj2 = new JSONObject();
-
-		obj2 = obj;
-
-		obj2.put("c","ccc");
-
-		System.out.println(obj2);
-		System.out.println(obj);
-
-
-
-
 
 
 	}

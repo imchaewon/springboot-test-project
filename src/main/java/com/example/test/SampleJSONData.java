@@ -8,8 +8,10 @@ public class SampleJSONData {
 				"{\n" +
 				"\"no\":\"001\",\n" +
 				"\"name\":\"아이유\",\n" +
+				"\"gender\":\"f\",\n" +
 				"\"birth\":\"930516\",\n" +
 				"\"height\":\"162\",\n" +
+				"\"weight\":\"45.6\",\n" +
 				"\"address\":\"성남시 분당구 판교동\"\n" +
 				"},\n" +
 				"{\n" +
