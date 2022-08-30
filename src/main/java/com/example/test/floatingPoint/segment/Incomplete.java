@@ -1,9 +1,6 @@
 package com.example.test.floatingPoint.segment;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 public class Incomplete {
 	public static void main(String[] args) throws IOException {
@@ -13,46 +10,18 @@ public class Incomplete {
 //		String num = reader.readLine();
 		String num = "-12.34";
 
-		String r_binary = toBinary(num);
+		int[] result = toBinary(num);
 
-		System.out.println(r_binary);
-
-		double r_decimal = toDecimal(r_binary);
-
-		System.out.println(r_decimal);
-
-	}
-
-	private static double toDecimal(String binary) {
-		int point = binary.indexOf(".");
-
-		String significand = binary.substring(0, point);
-		String mantissa = binary.substring(point + 1);
-
-		char[] arr_significand = significand.toCharArray();
-		char[] arr_mantissa = mantissa.toCharArray();
-
-		int r_significand = 0;
-		double r_mantissa = 0;
-
-		double result;
-
-		for(int i=0;i<arr_significand.length;i++){
-			if((arr_significand[i]+"").equals("1")) {
-				r_significand += (int) Math.pow(2, arr_significand.length - i - 1);
+		for (int j = 1; j <= ; j+=10) {
+			for (int i = 0; i < 10; i++) {
+				System.out.print(result[i*j]);
 			}
+			System.out.println();
 		}
 
-		for(int i=0;i<arr_mantissa.length;i++){
-			r_mantissa += (arr_mantissa[i]-'0') * (1 / Math.pow(2, i + 1));
-		}
-
-		result = (binary.charAt(0) == '-' ? -1 : 1) * (r_significand + r_mantissa);
-
-		return result;
 	}
 
-	private static String toBinary(String num) {
+	private static int[] toBinary(String num) {
 		int point = num.indexOf(".");
 
 		String significand = num.substring(0, point);
@@ -66,44 +35,45 @@ public class Incomplete {
 		int j;
 		int k = Integer.parseInt(mantissa);
 
-		List<Integer> significandList = new ArrayList<>();
-		List<Integer> mantissaList = new ArrayList<>();
+		int[] result = new int[32];
+		int[] significandList = new int[10];
+		int[] mantissaList = new int[10];
 
-		StringBuilder result = new StringBuilder();
+		result[0] = negative ? 1 : 0;
 
 
-		while (i>0){
-			j = i % 2;
-			i /= 2;
-			if (i == 0) j = 1;
-			significandList.add(j);
-		}
-		Collections.reverse(significandList);
+//		while (i>0){
+//			j = i % 2;
+//			i /= 2;
+//			if (i == 0) j = 1;
+//			significandList.add(j);
+//		}
+//		Collections.reverse(significandList);
 
 		System.out.println(num);
-		for (int l=0;l<10;l++){
-			int len = (int)Math.log10(k)+1;
-			k *= 2;
-			boolean carry = (int)Math.log10(k) + 1 - len == 1;
-			if (carry){
-				mantissaList.add(1);
-				k = Integer.parseInt((k+"").substring(1));
-			}else{
-				mantissaList.add(0);
-			}
-			if(k == 0)
-				break;
-		}
-
-		if(negative)
-			result.append("-");
-		for(int item:significandList){
-			result.append(item);
-		}
-		result.append(".");
-		for(int item:mantissaList){
-			result.append(item);
-		}
-		return String.valueOf(result);
+//		for (int l=0;l<10;l++){
+//			int len = (int)Math.log10(k)+1;
+//			k *= 2;
+//			boolean carry = (int)Math.log10(k) + 1 - len == 1;
+//			if (carry){
+//				mantissaList.add(1);
+//				k = Integer.parseInt((k+"").substring(1));
+//			}else{
+//				mantissaList.add(0);
+//			}
+//			if(k == 0)
+//				break;
+//		}
+//
+//		if(negative)
+//			result.append("-");
+//		for(int item:significandList){
+//			result.append(item);
+//		}
+//		result.append(".");
+//		for(int item:mantissaList){
+//			result.append(item);
+//		}
+		return result;
 	}
 }
