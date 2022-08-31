@@ -3,7 +3,6 @@ package com.example.test.operatorPrecedence.t3;
 public class Run {
 	public static void main(String[] args) {
 
-
 		int i0 = 0;
 		int j0 = 0;
 
@@ -22,6 +21,7 @@ public class Run {
 		int i1 = 0;
 		int j1 = 0;
 
+			System.out.printf("%s","asd");
 		if (i1++ == 1 && ++j1 == 1) {
 			System.out.printf("true,%d,%d\r",i1,j1);
 		}	else {
