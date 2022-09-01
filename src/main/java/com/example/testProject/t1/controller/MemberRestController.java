@@ -1,7 +1,7 @@
-package com.example.testProject.controller;
+package com.example.testProject.t1.controller;
 
-import com.example.testProject.model.member.entity.Member;
-import com.example.testProject.service.MemberService;
+import com.example.testProject.t1.model.member.entity.Member;
+import com.example.testProject.t1.service.MemberService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

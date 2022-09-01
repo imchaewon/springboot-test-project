@@ -1,7 +1,7 @@
-package com.example.testProject.service;
+package com.example.testProject.t1.service;
 
-import com.example.testProject.mapper.MemberMapper;
-import com.example.testProject.model.member.entity.Member;
+import com.example.testProject.t1.mapper.MemberMapper;
+import com.example.testProject.t1.model.member.entity.Member;
 import lombok.RequiredArgsConstructor;
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;

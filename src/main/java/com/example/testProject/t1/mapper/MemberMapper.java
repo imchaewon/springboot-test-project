@@ -1,6 +1,6 @@
-package com.example.testProject.mapper;
+package com.example.testProject.t1.mapper;
 
-import com.example.testProject.model.member.entity.Member;
+import com.example.testProject.t1.model.member.entity.Member;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

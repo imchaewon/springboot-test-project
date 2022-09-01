@@ -1,6 +1,6 @@
-package com.example.testProject.test2;
+package com.example.testProject.t2;
 
-import com.example.testProject.test2.qualifier.Car;
+import com.example.testProject.t2.qualifier.Car;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

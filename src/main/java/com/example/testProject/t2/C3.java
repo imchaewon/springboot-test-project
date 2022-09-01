@@ -1,4 +1,4 @@
-package com.example.testProject.test2;
+package com.example.testProject.t2;
 
 import lombok.RequiredArgsConstructor;
 import org.apache.ibatis.session.SqlSession;

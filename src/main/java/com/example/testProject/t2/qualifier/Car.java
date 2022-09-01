@@ -1,4 +1,4 @@
-package com.example.testProject.test2.qualifier;
+package com.example.testProject.t2.qualifier;
 
 
 import org.springframework.stereotype.Component;

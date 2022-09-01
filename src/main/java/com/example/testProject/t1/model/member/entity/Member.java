@@ -1,4 +1,4 @@
-package com.example.testProject.model.member.entity;
+package com.example.testProject.t1.model.member.entity;
 
 import lombok.Getter;
 import lombok.Setter;

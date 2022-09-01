@@ -21,7 +21,7 @@ spring:
       suffix: .jsp
 
 mybatis:
-  type-aliases-package: com.example.testproject.model
+  type-aliases-package: com.example.testproject.t1.model
   mapper-locations: mybatis/test/**/*.xml
 
 server:
