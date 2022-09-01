@@ -1,6 +1,8 @@
 package com.example.test.floatingPoint.segment;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -9,10 +11,10 @@ public class Incomplete {
 	public static void main(String[] args) throws IOException {
 
 		// 실수 10진수를 2진수로 변환
-//		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-//		String num = reader.readLine();
-		String num = "-12.345";
-		int bit = 32;
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		String num = reader.readLine();
+
+		int bit = 32; // float=32bit / double=64bit
 
 		int[] result = toBinary(num, bit);
 
