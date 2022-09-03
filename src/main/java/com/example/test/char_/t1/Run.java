@@ -21,5 +21,22 @@ public class Run {
 		System.out.println(String.valueOf(c1 + c2) == "194");
 		System.out.println(String.valueOf(c1 + c2).equals("194"));
 
+		System.out.println("--------");
+
+		char c3 = 'a';
+		System.out.println((int)c3);
+		System.out.println(c3+'0'-'0');
+
+		System.out.println(String.valueOf(c3).equals("a"));
+		System.out.println(Character.toString(c3).equals("a"));
+		System.out.println((c3+"").equals("a"));
+
+		System.out.println("--------");
+
+		char c4 = '5';
+		System.out.println(c4 == 5);
+		System.out.println(c4-'0' == 5);
+		System.out.println(Character.getNumericValue(c4) == 5);
+
 	}
 }

@@ -1,18 +1,17 @@
-package com.example.test.floatingPoint.calc;
+package com.example.test.floatingPoint.segment;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Run {
+public class Incomplete {
 	public static void main(String[] args) throws IOException {
 
 		// 실수 10진수를 2진수로 변환
-		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-		String num = reader.readLine();
+//		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+//		String num = reader.readLine();
+		String num = "-12.34";
 
 		String r_binary = toBinary(num);
 
