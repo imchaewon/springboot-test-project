@@ -1,4 +1,4 @@
-package com.example.java_.annotation.json.jsonCreator1;
+package com.example.java_.annotation.jackson.jsonCreator1;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;

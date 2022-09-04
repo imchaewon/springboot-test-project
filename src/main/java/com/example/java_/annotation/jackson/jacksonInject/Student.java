@@ -1,4 +1,4 @@
-package com.example.java_.annotation.json.jacksonInject;
+package com.example.java_.annotation.jackson.jacksonInject;
 
 import com.fasterxml.jackson.annotation.JacksonInject;
 import lombok.Getter;

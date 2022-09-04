@@ -1,4 +1,4 @@
-package com.example.java_.annotation.json.jsonDeserialize.t1;
+package com.example.java_.annotation.jackson.jsonDeserialize.t1;
 
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.DeserializationContext;

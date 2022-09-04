@@ -1,4 +1,4 @@
-package com.example.java_.annotation.json.jsonSetter;
+package com.example.java_.annotation.jackson.jsonSetter;
 
 import com.fasterxml.jackson.annotation.JsonSetter;
 import lombok.Getter;

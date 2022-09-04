@@ -13,7 +13,7 @@ public class Run {
 		map.put("shape2", new Circle("circle", 5));
 		ObjectMapper objectMapper = new ObjectMapper();
 		String json = objectMapper.writeValueAsString(map);
-		System.out.println(json);
+//		System.out.println(json);
 		Map<String, Shape> test = objectMapper.readValue(json, new TypeReference<Map<String, Shape>>(){});
 		System.out.println(objectMapper.writeValueAsString(test));
 	}
