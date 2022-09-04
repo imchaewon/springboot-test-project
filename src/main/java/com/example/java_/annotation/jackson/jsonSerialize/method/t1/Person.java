@@ -1,4 +1,4 @@
-package com.example.java_.annotation.jackson.jsonSerialize.writeValue.t1;
+package com.example.java_.annotation.jackson.jsonSerialize.method.t1;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

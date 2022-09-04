@@ -6,7 +6,6 @@ import lombok.*;
 
 @ToString
 @Getter
-@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 class Model {

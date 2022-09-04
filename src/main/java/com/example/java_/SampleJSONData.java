@@ -33,6 +33,7 @@ public class SampleJSONData {
 				"\"address\":\"서울특별시 중구 장충동1가 54-1\"\n" +
 				"}\n" +
 				"]}";
+
 		return new JSONObject(s1);
 	}
 }
