@@ -1,11 +1,18 @@
 package com.example.java_.annotation.jackson.jsonSerialize.JsonTypeInfo_JsonSubTypes.t1;
 
-public class Run {
-	public static void main(String[] args) {
-		C2 c2 = new C2();
-		System.out.println(c2);
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
-		C3 c3 = new C3();
-		System.out.println(c3);
+public class Run {
+	public static void main(String[] args) throws JsonProcessingException {
+
+		Person person = new Person("sean",11,new MoreInfo("m","q.q.com"),new School("seoulUniv","seoul"));
+		System.out.println(person);
+
+		ObjectMapper objectMapper = new ObjectMapper();
+		String json = objectMapper.writeValueAsString(person);
+		System.out.println(json);
+
+
 	}
 }

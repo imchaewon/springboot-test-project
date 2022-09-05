@@ -7,10 +7,21 @@ import lombok.ToString;
 @ToString
 @JsonTypeInfo(use = JsonTypeInfo.Id.NAME, visible = true, property = "event_name", defaultImpl = Undefined.class)
 @JsonSubTypes({
-		@JsonSubTypes.Type(name = "c2", value = C2.class),
-		@JsonSubTypes.Type(name = "c3", value = C3.class),
+		@JsonSubTypes.Type(name = "moreInfo", value = MoreInfo.class),
+		@JsonSubTypes.Type(name = "School", value = School.class),
 })
-public abstract class C1 {
+public class Person {
 	String name;
 	int age;
+	MoreInfo moreInfo;
+
+	School school;
+
+	public Person(String name, int age, MoreInfo moreInfo, School school) {
+		this.name = name;
+		this.age = age;
+		this.moreInfo = moreInfo;
+		this.school = school;
+	}
+
 }
