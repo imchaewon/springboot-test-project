@@ -17,7 +17,7 @@ public class Student {
 
 	@JsonSetter("age")
 	public void setTheAge(int age) {
-		this.age = age;;
+		this.age = age;
 	}
 
 }
