@@ -1,6 +1,5 @@
 package com.example.java_.stream.map.t2;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
@@ -14,7 +13,7 @@ public class Run {
 						.age(1)
 						.gender("남자")
 						.build(),
-						SampleDto2.builder()
+					SampleDto2.builder()
 						.age(2)
 						.gender("여자")
 						.build()
@@ -23,10 +22,7 @@ public class Run {
 		Collection<SampleDto2> list2 = list.stream()
 				.collect(Collectors.toList());
 
-		List<SampleDto2> list3 = new ArrayList<>();
-		list3.addAll(list);
-
-		List<String> list4 = list.stream()
+		List<String> list3 = list.stream()
 				.map(asd -> asd+"cc")
 				.collect(Collectors.toList());
 
@@ -34,7 +30,6 @@ public class Run {
 		System.out.println(list);
 		System.out.println(list2);
 		System.out.println(list3);
-		System.out.println(list4);
 
 	}
 }

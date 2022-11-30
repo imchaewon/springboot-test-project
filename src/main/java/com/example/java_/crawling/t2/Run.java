@@ -10,8 +10,6 @@ public class Run {
 
 		String id = "";
 
-
-
 		try {
 			String URL = "https://www.mma.go.kr/temple/listdetail.do?mmgudgigwan_cd=" + 2590;
 			Document doc = Jsoup.connect(URL).get();

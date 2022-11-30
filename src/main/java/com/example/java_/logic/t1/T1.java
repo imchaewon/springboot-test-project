@@ -13,7 +13,7 @@ public class T1 {
 			System.out.println(false);
 		}
 
-		// 위 아래 동일함
+		// 위,아래의 식은 동일함
 
 		if(!(i == 2 || j == 3 || k == 3)){
 			System.out.println(true);

@@ -1,6 +1,6 @@
 package com.example.spring.t1.service;
 
-import com.example.spring.t1.mapper.MemberMapper;
+import com.example.spring.t2.mapper.MemberMapper;
 import com.example.spring.t1.model.member.entity.Member;
 import lombok.RequiredArgsConstructor;
 import org.apache.ibatis.session.SqlSession;

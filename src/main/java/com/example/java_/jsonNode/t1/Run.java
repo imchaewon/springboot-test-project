@@ -2,6 +2,7 @@ package com.example.java_.jsonNode.t1;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -42,10 +43,19 @@ public class Run {
 		System.out.println("-----");
 
 		System.out.println(jsonNode1.findPath("asd"));
+		System.out.println(jsonNode1.findPath("asd").toString().equals(""));
 		System.out.println(jsonNode1.get("asd"));
 		System.out.println(jsonNode1.path("asd").getClass());
 		System.out.println(jsonNode1.path("asd").isMissingNode());
 
+		System.out.println("-----");
+
+		try {
+			JsonNode node = objectMapper.readTree(String.valueOf(jsonNode1));
+			System.out.println(node);
+		} catch (JsonProcessingException e) {
+			throw new RuntimeException(e);
+		}
 
 	}
 }

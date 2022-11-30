@@ -11,8 +11,5 @@ public class Run {
 
 		System.out.println(list.stream().map(Object::toString).collect(Collectors.joining(", ")));
 
-
-
-
 	}
 }

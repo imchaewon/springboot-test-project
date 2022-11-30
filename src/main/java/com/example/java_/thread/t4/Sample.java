@@ -2,9 +2,8 @@ package com.example.java_.thread.t4;
 
 import java.util.ArrayList;
 
-// Thread클래스를 상속받으면 다른 클래스를 상속받을 수 없기 때문에 Runnable인터페이스를 구현하는 방법을 주로 씀
-public class Sample implements Runnable{
-
+// 쓰레드 실행후 메인메소드가 종료 된 후 종료시키는 예제
+public class Sample extends Thread{
 	int seq;
 
 	public Sample(int seq) {
@@ -15,7 +14,7 @@ public class Sample implements Runnable{
 		System.out.println(this.seq + "쓰레드 시작");
 		try {
 			Thread.sleep(1000);
-		} catch (Exception e) {
+		} catch (Exception ignored) {
 		}
 		System.out.println(this.seq + "쓰레드 종료");
 	}
@@ -25,7 +24,7 @@ public class Sample implements Runnable{
 		ArrayList<Thread> threads = new ArrayList<>();
 
 		for (int i = 0; i < 10; i++) {
-			Thread t = new Thread(new Sample(i));
+			Thread t = new Sample(i);
 			t.start();
 			threads.add(t);
 		}
@@ -33,7 +32,7 @@ public class Sample implements Runnable{
 		for (int i = 0; i < threads.size(); i++) {
 			Thread t = threads.get(i);
 			try {
-				t.join();
+				t.join(); // 쓰레드가 종료될 때까지 기다림
 			} catch (Exception e) {
 			}
 		}
@@ -41,25 +40,4 @@ public class Sample implements Runnable{
 		System.out.println("메인 메소드 종료");
 
 	}
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
