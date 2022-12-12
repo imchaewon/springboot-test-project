@@ -26,7 +26,7 @@ public class Solution5 {
 	}
 
 	public static void main(String[] args) {
-		Solution5 solution4 = new Solution5();
-		System.out.println(solution4.solution("pPoooyY"));
+		Solution5 s = new Solution5();
+		System.out.println(s.solution("pPoooyY"));
 	}
 }

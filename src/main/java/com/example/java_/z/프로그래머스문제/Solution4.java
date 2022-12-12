@@ -27,7 +27,7 @@ public class Solution4 {
 	}
 
 	public static void main(String[] args) {
-		Solution4 solution4 = new Solution4();
-		System.out.println(solution4.solution(2152169758L));
+		Solution4 s = new Solution4();
+		System.out.println(s.solution(2152169758L));
 	}
 }

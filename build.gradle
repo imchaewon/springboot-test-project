@@ -40,6 +40,10 @@ dependencies {
     runtimeOnly 'org.mariadb.jdbc:mariadb-java-client:2.7.5'
     testImplementation 'org.springframework.boot:spring-boot-starter-test:2.6.4'
     providedCompile 'org.springframework.boot:spring-boot-starter-tomcat:2.6.4'
+    implementation 'javax.xml.bind:jaxb-api:2.1'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.security:spring-security-test'
+
 }
 
 group = 'com.example'
