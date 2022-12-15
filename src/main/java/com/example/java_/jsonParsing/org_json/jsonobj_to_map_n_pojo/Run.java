@@ -1,7 +1,7 @@
 package com.example.java_.jsonParsing.org_json.jsonobj_to_map_n_pojo;
 
-import com.example.java_.stream.testData.Human;
-import com.example.java_.stream.testData.HumanData;
+import com.example.java_.testData.Human;
+import com.example.java_.testData.HumanData;
 import org.json.JSONArray;
 import org.json.JSONObject;
 

@@ -1,9 +1,6 @@
 package com.example.java_.z.프로그래머스문제;
 
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.stream.Collectors;
 
 //배열 회전시키기
 //정수가 담긴 배열 numbers와 문자열 direction가 매개변수로 주어집니다.

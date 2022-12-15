@@ -1,6 +1,5 @@
 package com.example.java_.z.프로그래머스문제;
 
-import java.util.Arrays;
 import java.util.stream.IntStream;
 
 //순서쌍의 개수

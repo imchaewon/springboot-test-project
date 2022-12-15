@@ -1,7 +1,5 @@
 package com.example.java_.z.프로그래머스문제;
 
-import java.util.Arrays;
-
 //편지
 //머쓱이는 할머니께 생신 축하 편지를 쓰려고 합니다.
 //할머니가 보시기 편하도록 글자 한 자 한 자를 가로 2cm 크기로 적으려고 하며,

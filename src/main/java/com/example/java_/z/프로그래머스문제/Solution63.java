@@ -1,9 +1,6 @@
 package com.example.java_.z.프로그래머스문제;
 
 import java.util.Arrays;
-import java.util.Objects;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 //369게임
 //머쓱이는 친구들과 369게임을 하고 있습니다.
@@ -16,9 +13,7 @@ public class Solution63 {
 	}
 
 	public int solution(int order) {
-		int answer = 0;
-
-		return answer;
+		return (int) Arrays.stream(String.valueOf(order).split("")).filter(s -> s.matches("[3|6|9]")).count();
 	}
 
 }

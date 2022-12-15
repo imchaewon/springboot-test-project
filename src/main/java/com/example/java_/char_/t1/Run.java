@@ -8,6 +8,8 @@ public class Run {
 		System.out.printf("%c\n",97);
 		System.out.printf("%s\n",c1);
 		System.out.printf("%c\n","a".charAt(0));
+		System.out.println((char) 97);
+		System.out.println(Character.toChars(97));
 
 		System.out.println("--------");
 
