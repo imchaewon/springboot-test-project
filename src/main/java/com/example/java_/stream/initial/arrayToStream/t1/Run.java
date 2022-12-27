@@ -18,7 +18,8 @@ public class Run {
 		IntStream intStream3 = Arrays.stream(intArr,1,3);
 		Stream<Integer> stream = Stream.of(1,2,3,4,5);
 		Stream<Integer> stream2 = list.stream();
-		Stream<String> stream3= Arrays.stream(StringArr);
+		Stream<String> stream3 = Arrays.stream(StringArr);
+		Stream<String> stream4 = Stream.of(StringArr);
 
 //		intStream.forEach(System.out::println);
 		intStream.forEach(i -> {
@@ -32,6 +33,7 @@ public class Run {
 		System.out.println(stream.collect(Collectors.toList()));
 		System.out.println(stream2.collect(Collectors.toList()));
 		System.out.println(stream3.collect(Collectors.toList()));
+		System.out.println(stream4.collect(Collectors.toList()));
 
 		System.out.println(Arrays.stream(intArr).boxed().map(i->i+"").collect(Collectors.joining()));
 		System.out.println(Arrays.stream(intArr).boxed().map(i->i+"").collect(Collectors.joining("_")));

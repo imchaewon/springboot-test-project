@@ -16,9 +16,13 @@ public class Run {
 		// -1-2--3-4--5-6... → -1-2+3-4+5-6...
 
 		System.out.println(list.stream().parallel().reduce(0, (i, j) -> i - j, (k, l) -> k - l));
+		// 위와 동일
+
+		System.out.println(list.stream().parallel().reduce(0, (i, j) -> i - j, (k, l) -> k + l));
 		// (1-2)+(-3-4)+(-5-6)...
 
 		System.out.println(list.stream().parallel().reduce(0, (i, j) -> i - j, Integer::sum));
+		// 위와 동일
 
 	}
 }

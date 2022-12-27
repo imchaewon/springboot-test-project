@@ -1,4 +1,4 @@
-package com.example.java_.stream.intermediate.reduce.parallel.normal;
+package com.example.java_.stream.intermediate.reduce.parallel.sum;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -12,7 +12,7 @@ public class Run {
 
 //		int[] arr = new int[10000000];
 		List<Integer> list = new ArrayList<>();
-		for (int i = 0; i < 10000000; i++) {
+		for (int i = 0; i < 100000000; i++) {
 //			arr[i] = i + 1;
 			list.add(i);
 		}

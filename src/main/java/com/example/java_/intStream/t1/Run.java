@@ -10,10 +10,12 @@ public class Run {
 
 		// IntStream 생성
 		IntStream is1 = IntStream.of(1,2,3,4,5); // 1,2,3,4,5
+		IntStream isa = IntStream.of(new int[]{1,2,3,4,5}); // 1,2,3,4,5
 		IntStream is2 = IntStream.range(1,5); // 1,2,3,4
 		IntStream is3 = IntStream.rangeClosed(1,5); // 1,2,3,4,5
 
 		System.out.println(is1.boxed().collect(Collectors.toList()));
+		System.out.println(isa.boxed().collect(Collectors.toList()));
 		System.out.println(is2.boxed().collect(Collectors.toList()));
 		System.out.println(is3.boxed().collect(Collectors.toList()));
 
