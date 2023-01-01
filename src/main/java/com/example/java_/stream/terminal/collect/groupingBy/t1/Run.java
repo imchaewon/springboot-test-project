@@ -9,6 +9,7 @@ public class Run {
 
 		String s1 = "asdfaasdghdsasdafd";
 
+		System.out.println(Arrays.stream(s1.split("")).collect(Collectors.groupingBy(s -> s)));
 		System.out.println(s1.chars().mapToObj(i->(char)i).collect(Collectors.groupingBy(s -> s)));
 		System.out.println(s1.chars().mapToObj(i->(char)i).collect(Collectors.groupingBy(s -> s)).entrySet());
 		System.out.println(Arrays.toString(s1.chars().mapToObj(i -> (char) i).collect(Collectors.groupingBy(s -> s)).values().toArray()));

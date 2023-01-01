@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 //등수 매기기
 //영어 점수와 수학 점수의 평균 점수를 기준으로 학생들의 등수를 매기려고 합니다.
@@ -14,6 +15,7 @@ public class Solution93 {
 		Solution93 s = new Solution93();
 		System.out.println(Arrays.toString(s.solution(new int[][]{{80, 70}, {90, 55}, {40, 70}, {40, 70}, {10, 10}})));
 		System.out.println(Arrays.toString(s.solution2(new int[][]{{80, 70}, {90, 55}, {40, 70}, {40, 70}, {10, 10}})));
+		System.out.println(Arrays.toString(s.solution3(new int[][]{{80, 70}, {90, 55}, {40, 70}, {40, 70}, {10, 10}})));
 	}
 
 	public int[] solution(int[][] score) {
@@ -45,6 +47,10 @@ public class Solution93 {
 			answer[i] = scoreList.indexOf(score[i][0] + score[i][1])+1;
 		}
 		return answer;
+	}
+
+	public int[] solution3(int[][] score) {
+		return Arrays.stream(score).map(arr -> Arrays.stream(arr).average().orElse(0)).mapToInt(n -> Arrays.stream(score).map(arr -> Arrays.stream(arr).average().orElse(0)).sorted(Comparator.reverseOrder()).collect(Collectors.toList()).indexOf(n) + 1).toArray();
 	}
 }
 
