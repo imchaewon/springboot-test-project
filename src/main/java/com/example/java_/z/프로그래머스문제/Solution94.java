@@ -20,17 +20,9 @@ public class Solution94 {
 	}
 
 	public int[] solution2(int[] numlist, int n) {
-		return Arrays.stream(numlist).boxed().sorted((a, b) -> Math.abs(n - a) == Math.abs(n - b) ? b.compareTo(a) : Integer.compare(Math.abs(n - a), Math.abs(n - b))).mapToInt(Integer::intValue).toArray();
+		return Arrays.stream(numlist).boxed().sorted((a, b) -> Math.abs(n-a) == Math.abs(n-b) ? b.compareTo(a) : Integer.compare(Math.abs(n-a), Math.abs(n-b))).mapToInt(Integer::intValue).toArray();
 	}
 
 }
-
-
-
-
-
-
-
-
 
 
